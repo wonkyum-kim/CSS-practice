@@ -1,0 +1,34 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body,
+html {
+  height: 100%;
+}
+
+/* Alignment styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fig {
+  position: relative;
+}
+
+.fig__caption {
+  position: absolute;
+  width: 100%;
+  bottom: 0;
+  background: rgba(55, 55, 55, 0.5);
+  color: white;
+  padding: 1em;
+}
+
+.fig__random-img {
+  display: block;
+}
