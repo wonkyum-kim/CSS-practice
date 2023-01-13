@@ -8,15 +8,17 @@ p {
   line-height: 1.4;
 }
 
-.tooltip {
-  display: inline-block;
-  color: deeppink;
-  font-weight: bold;
+span[data-descriptor] {
+  position: relative;
+  cursor: help;
+  color: hotpink;
 }
 
-.tooltip__text {
-  display: none;
+span[data-descriptor]:hover::after {
+  content: attr(data-descriptor);
   position: absolute;
+  left: 0;
+  top: 24px;
   max-width: 200px;
   border: 1px solid;
   border-radius: 5px;
@@ -24,10 +26,6 @@ p {
   font-size: 0.8em;
   color: white;
   background: deeppink;
-}
-
-.tooltip:hover .tooltip__text {
-  display: block;
 }
 
 /**
