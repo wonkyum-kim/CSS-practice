@@ -1,0 +1,37 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+p {
+  line-height: 1.4;
+}
+
+.tooltip {
+  display: inline-block;
+  color: deeppink;
+  font-weight: bold;
+}
+
+.tooltip__text {
+  display: none;
+  position: absolute;
+  max-width: 200px;
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+  font-size: 0.8em;
+  color: white;
+  background: deeppink;
+}
+
+.tooltip:hover .tooltip__text {
+  display: block;
+}
+
+/**
+ * TODO
+ * 1. arrow tooltip
+ * 2. animation tooltip
+ */
