@@ -1,0 +1,33 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: #eee;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 75px;
+  padding: 1rem;
+  color: white;
+  background: teal;
+  font-weight: bold;
+  /* top: 0까지 적용해야 된다. */
+  position: sticky;
+  top: 0;
+  width: 100%;
+  opacity: 0.7;
+}
+
+nav {
+  font-size: 20px;
+}
+
+p {
+  font-size: 100px;
+}
